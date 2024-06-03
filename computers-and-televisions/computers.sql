@@ -25,6 +25,8 @@ INSERT INTO computers ( make, model, price ) VALUES ( 'Apple', 'Laptop 4', 80000
 
 -- Select all entries from the computers table
 
+SELECT * FROM computers;
+
 
 -- HUNGRY FOR MORE? 
 -- Look at this afternoon's instructor notes and read on altering tables before attempting below
