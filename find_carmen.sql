@@ -40,8 +40,14 @@ SELECT countrycode, language FROM countrylanguage WHERE countrycode = 'VAT';
 -- -------------+----------
 --  VAT         | Italian
 
+
 -- Clue #3: We have new news on the classes Carmen attended – our gumshoes tell us she's moved on to a different country, a country where people speak only the language she was learning. Find out which nearby country speaks nothing but that language.
 
+SELECT code, name, language, percentage FROM country JOIN countrylanguage ON country.code = countrylanguage.countrycode WHERE country.region = 'Southern Europe' AND countrylanguage.language = 'Italian' AND countrylanguage.percentage = 100;
+
+--  code |    name    | language | percentage
+-- ------+------------+----------+------------
+--  SMR  | San Marino | Italian  |        100
 
 
 -- Clue #4: We're booking the first flight out – maybe we've actually got a chance to catch her this time. There are only two cities she could be flying to in the country. One is named the same as the country – that would be too obvious. We're following our gut on this one; find out what other city in that country she might be flying to.
