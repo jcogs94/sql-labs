@@ -70,7 +70,7 @@ carmen=# SELECT code, country.name, city.name FROM country JOIN city ON country.
 
 -- Clue #6: We're close! Our South American agent says she just got a taxi at the airport, and is headed towards the capital! Look up the country's capital, and get there pronto! Send us the name of where you're headed and we'll follow right behind you!
 
-SELECT country.code, country.name, city.name FROM country JOIN city ON country.capital = city.id WHERE code = 'BRA';
+SELECT country.code, country.name, city.name FROM country JOIN city ON country.capital = city.id WHERE country.code = 'BRA';
 
 --  code |  name  |    name
 -- ------+--------+------------
@@ -91,4 +91,8 @@ SELECT country.code, country.name, city.name FROM country JOIN city ON country.c
 
 -- We're counting on you, gumshoe. Find out where she's headed, send us the info, and we'll be sure to meet her at the gates with bells on.
 
+SELECT * FROM city WHERE population = 91084;
 
+--   id  |     name     | countrycode |  district  | population
+-- ------+--------------+-------------+------------+------------
+--  4060 | Santa Monica | USA         | California |      91084
