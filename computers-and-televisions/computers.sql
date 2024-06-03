@@ -17,6 +17,11 @@ CREATE TABLE computers ( id serial, make varchar(20), model varchar(20), cpu_spe
 
 -- Insert 4 computers into the computers table
 
+INSERT INTO computers ( make, model, price ) VALUES ( 'Intel', 'Laptop 1', 350 );
+INSERT INTO computers ( make, model, price ) VALUES ( 'HP', 'Laptop 2', 450 );
+INSERT INTO computers ( make, model, price ) VALUES ( 'Toshiba', 'Laptop 3', 550 );
+INSERT INTO computers ( make, model, price ) VALUES ( 'Apple', 'Laptop 4', 80000 );
+
 
 -- Select all entries from the computers table
 
