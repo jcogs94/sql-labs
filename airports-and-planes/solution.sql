@@ -1,9 +1,10 @@
 SELECT
-    origin.city AS origin,
-    origin.icao AS airport,
-    routes.airline_id,
-    destination.city AS destination,
-    destination.icao AS airport
+    COUNT(*)
+    -- origin.city AS origin,
+    -- origin.icao AS airport,
+    -- routes.airline_id,
+    -- destination.city AS destination,
+    -- destination.icao AS airport
 FROM
     airports AS origin
 INNER JOIN
