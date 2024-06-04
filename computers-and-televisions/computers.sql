@@ -12,7 +12,20 @@
 --  price, release_date, photo_url, storage_amount, number_usb_ports,
 --  number_firewire_ports, number_thunderbolt_ports
 
-CREATE TABLE computers ( id serial, make varchar(20), model varchar(20), cpu_speed decimal, memory_size varchar(20), price decimal, release_date timestamp, photo_url varchar(100), storage_amount varchar(20), number_usb_ports int, number_firewire_ports int, number_thunderbolt_ports int );
+CREATE TABLE computers (
+    id serial,
+    make varchar(20),
+    model varchar(20),
+    cpu_speed decimal,
+    memory_size varchar(20),
+    price decimal,
+    release_date timestamp,
+    photo_url varchar(100),
+    storage_amount varchar(20),
+    number_usb_ports int,
+    number_firewire_ports int,
+    number_thunderbolt_ports int
+);
 
 
 -- Insert 4 computers into the computers table
