@@ -33,3 +33,7 @@ SELECT * FROM computers;
 
 -- Alter the computers_models, removing the storage_amount column
 -- and add storage_type and storage_size columns
+
+ALTER TABLE computers DROP COLUMN storage_amount;
+ALTER TABLE computers ADD COLUMN storage_type VARCHAR(10);
+ALTER TABLE computers ADD COLUMN storage_size VARCHAR(15);
