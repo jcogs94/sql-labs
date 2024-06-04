@@ -32,6 +32,8 @@ INSERT INTO televisions ( model_name, screen_size, price ) VALUES ( 'Apple', '20
 
 -- Select all entries from the tv_models table
 
+SELECT * FROM televisions;
+
 
 -- HUNGRY FOR MORE? 
 -- Look at this afternoon's instructor notes and read on altering tables before attempting below
