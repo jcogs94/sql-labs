@@ -12,13 +12,13 @@
 --  price, release_date, photo_url
 
 CREATE TABLE televisions (
-    id serial,
-    model_name varchar(20),
-    screen_size varchar(5),
-    resolution varchar(20),
-    price decimal,
-    release_date timestamp,
-    photo_url varchar(100)
+    id SERIAL,
+    model_name VARCHAR(20),
+    screen_size VARCHAR(5),
+    resolution VARCHAR(20),
+    price DECIMAL,
+    release_date TIMESTAMP,
+    photo_url VARCHAR(100)
 );
 
 
@@ -40,3 +40,7 @@ SELECT * FROM televisions;
 
 -- Alter the tv_models, removing the resolution column
 --  and add vertical_resolution and horizontal_resolution columns
+
+ALTER TABLE televisions DROP COLUMN resolution;
+ALTER TABLE televisions ADD COLUMN vertical_resolution INT;
+ALTER TABLE televisions ADD COLUMN horizontal_resolution INT;

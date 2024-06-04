@@ -13,18 +13,18 @@
 --  number_firewire_ports, number_thunderbolt_ports
 
 CREATE TABLE computers (
-    id serial,
-    make varchar(20),
-    model varchar(20),
-    cpu_speed decimal,
-    memory_size varchar(20),
-    price decimal,
-    release_date timestamp,
-    photo_url varchar(100),
-    storage_amount varchar(20),
-    number_usb_ports int,
-    number_firewire_ports int,
-    number_thunderbolt_ports int
+    id SERIAL,
+    make VARCHAR(20),
+    model VARCHAR(20),
+    cpu_speed DECIMAL,
+    memory_size VARCHAR(20),
+    price DECIMAL,
+    release_date TIMESTAMP,
+    photo_url VARCHAR(100),
+    storage_amount VARCHAR(20),
+    number_usb_ports INT,
+    number_firewire_ports INT,
+    number_thunderbolt_ports INT
 );
 
 
